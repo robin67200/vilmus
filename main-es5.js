@@ -483,7 +483,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<mat-card class=\"example-card\">\r\n  <mat-card-content>\r\n    <p>\r\n      Je suis Robin Vilmus un jeune homme de 23 ans résident sur Strasbourg. \r\n      J'étudie actuellement l'informatique et plus précisemment le developpement en deuxième année de BTS SIO en alterance. \r\n      Mon entreprise est technology&strategy et se situe Schiltigheim. \r\n    </p>\r\n    <br>\r\n    <p>En plus de ma passion pour l'informatique, je suis quelqu'un qui apprécie jouer aux échecs et aime voyager</p>\r\n  </mat-card-content>\r\n  <mat-card-actions>\r\n  <button style=\"margin-left: 10%;\" (click)=\"close()\" mat-button>Fermer</button>\r\n  </mat-card-actions>\r\n</mat-card>\r\n";
+    __webpack_exports__["default"] = "<mat-card class=\"example-card\">\r\n  <mat-card-content>\r\n    <p>\r\n      Je suis Robin Vilmus un jeune homme de 23 ans résident sur Strasbourg. \r\n      J'étudie actuellement l'informatique et plus précisemment le developpement en deuxième année de BTS SIO en alternance. \r\n      Mon entreprise est technology&strategy et se situe à Schiltigheim. \r\n    </p>\r\n    <br>\r\n    <p>En plus de ma passion pour l'informatique, je suis quelqu'un qui apprécie jouer aux échecs et aime voyager</p>\r\n  </mat-card-content>\r\n  <mat-card-actions>\r\n  <button style=\"margin-left: 10%;\" (click)=\"close()\" mat-button>Fermer</button>\r\n  </mat-card-actions>\r\n</mat-card>\r\n";
     /***/
   },
 
