@@ -1,0 +1,11 @@
+div
+{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container
+{
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  box-shadow: 10px 10px rgb(199, 199, 199);
+}

@@ -1,0 +1,86 @@
+<br>
+<h1 style="text-align: center;">Mon parcours</h1>
+<br>
+<p style="text-align: center;">(cliquez sur les dates pour voir les différents évènements)</p>
+<hr>
+<div class="container">
+<br>
+<mgl-timeline [toggle]="toggle" [alternate]="alternate" [side]="side">
+  <mgl-timeline-entry>
+    <mgl-timeline-entry-header (click)="onHeaderClick($event)">
+      <div><h3>2020</h3></div>
+    </mgl-timeline-entry-header>
+    <mgl-timeline-entry-content>
+      <div>
+        <h5 style="text-align: center;">Passage de l'examen du BTS SIO</h5>
+        <img style="margin-left: 20%;" src="https://robin67200.github.io/vilmus/assets/images/sio.jpg"/>
+      </div>
+    </mgl-timeline-entry-content>
+    <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'"
+                            [size]="size"
+                            (click)="onDotClick($event)">
+    </mgl-timeline-entry-dot>
+  </mgl-timeline-entry>
+  <mgl-timeline-entry>
+    <mgl-timeline-entry-header (click)="onHeaderClick($event)">
+      <div><h3>2018/2020</h3></div>
+    </mgl-timeline-entry-header>
+    <mgl-timeline-entry-content>
+      <div>
+        <h5>Alternant dans l'entreprise tech-cloud puis alternant chez technology&strategy (entreprise partenaire)</h5>
+        <img src="https://robin67200.github.io/vilmus/assets/images/ts.jpg"/>
+      </div>
+    </mgl-timeline-entry-content>
+    <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'"
+                            [size]="size"
+                            (click)="onDotClick($event)">
+    </mgl-timeline-entry-dot>
+  </mgl-timeline-entry>
+  <mgl-timeline-entry >
+    <mgl-timeline-entry-header (click)="onHeaderClick($event)">
+      <div>
+        <h3>2018</h3>
+      </div>
+    </mgl-timeline-entry-header>
+    <mgl-timeline-entry-content>
+      <div>
+        <h5>Obtention d'une licence en géographie environnementale</h5>
+        <img src="https://robin67200.github.io/vilmus/assets/images/geo.jpg"/>
+      </div>
+    </mgl-timeline-entry-content>
+    <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'"
+                            [size]="size"
+                            (click)="onDotClick($event)">
+    </mgl-timeline-entry-dot>
+  </mgl-timeline-entry>
+  <mgl-timeline-entry *ngFor="let entry of entries; let i = index;" (expand)="onExpandEntry($event, i)">
+    <mgl-timeline-entry-header (click)="onHeaderClick($event)">
+      <div><h3>2014</h3></div>
+    </mgl-timeline-entry-header>
+    <mgl-timeline-entry-content>
+      <div>
+        <h5>Obtention du baccalauréat scientifique option math</h5>
+      </div>
+    </mgl-timeline-entry-content>
+    <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'"
+                            [size]="size"
+                            (click)="onDotClick($event)">
+    </mgl-timeline-entry-dot>
+  </mgl-timeline-entry>
+  <mgl-timeline-entry *ngFor="let entry of entries; let i = index;" (expand)="onExpandEntry($event, i)">
+    <mgl-timeline-entry-header (click)="onHeaderClick($event)">
+      <div><h3>2011</h3></div>
+    </mgl-timeline-entry-header>
+    <mgl-timeline-entry-content>
+      <div>
+        <h5>Obtention du brevet des collèges</h5>
+      </div>
+    </mgl-timeline-entry-content>
+    <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'"
+                            [size]="size"
+                            (click)="onDotClick($event)">
+    </mgl-timeline-entry-dot>
+  </mgl-timeline-entry>
+
+  
+

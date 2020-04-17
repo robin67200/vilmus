@@ -1,0 +1,10 @@
+  li
+  {
+      margin-right: 30px;
+  }
+  button:focus {outline:0;}
+
+  .example-full-width
+ {
+  width: 100%;
+ }

@@ -1,0 +1,56 @@
+<h1 mat-dialog-title style="text-align: center;">Formulaire de contact</h1>
+  <form
+    class="form-horizontal form-label-left parsleyjs ng-untouched ng-pristine ng-valid"
+    [formGroup]="form"
+    (submit)="save()"
+    #formDir="ngForm"
+  >
+  <div mat-dialog-content>
+    <mat-form-field class="example-full-width">
+      <mat-label>Prenom</mat-label>
+      <input matInput formControlName="prenom" required />
+      <mat-error *ngIf="prenom.hasError('required')">
+        Veuillez renseigner un prenom
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="nom" required />
+      <mat-error *ngIf="nom.hasError('required')">
+        Veuillez renseigner un nom
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>mail</mat-label>
+      <input
+        matInput
+        formControlName="mail"
+        placeholder="Ex. toto@gmail.com"
+        required
+      />
+      <mat-error
+        *ngIf="mail.hasError('mail') && !mail.hasError('required')"
+      >
+        Veuillez renseigner un e-mail valide
+      </mat-error>
+      <mat-error *ngIf="mail.hasError('required')">
+        E-mail est <strong>requis</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Message</mat-label>
+      <textarea matInput formControlName="message" required></textarea>
+      <mat-error *ngIf="message.hasError('required')">
+        Veuillez renseigner un message
+      </mat-error>
+    </mat-form-field>
+    <p><strong>Contact:</strong></p>
+    <p>Robin Vilmus</p>
+    <p>11 rue de l'anneau à Strasbourg</p>
+    <p>06.88.26.01.14</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Retour</button>
+  <button mat-button type="submit">Envoyer</button>
+</div>
+</form>
